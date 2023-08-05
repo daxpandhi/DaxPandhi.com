@@ -3502,3 +3502,8 @@ a svg:hover {
 em{
 	font-weight: 600;
 }
+@media (orientation: portrait) {
+	.hide-portrait{
+		display: none !important;
+	}
+}
