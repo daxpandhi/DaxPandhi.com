@@ -1610,7 +1610,7 @@ nav.open {
 .light-content-header #logo img.white-logo {
 	opacity: 1 !important;
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 25px) {
 	.classic-menu nav {
 		position: relative;
 		width: auto;
