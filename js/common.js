@@ -1192,9 +1192,9 @@ Function FitThumbScreen WEBGL
 	
 		if (!$("body").hasClass("disable-ajaxload")) {
 		
-			if ($("#itemsWrapper").hasClass("webgl-fitthumbs")) {
+			if ($(".itemsWrapper").hasClass("webgl-fitthumbs")) {
 			
-				if( $('#itemsWrapper').length > 0 ){
+				if( $('.itemsWrapper').length > 0 ){
 				
 					function createDemoEffect(options) {
 					  const transitionEffect = new GridToFullscreenEffect(
@@ -1486,7 +1486,7 @@ Function FitThumbScreen WEBGL
 										
 					transitionEffect.init();
 					
-					if( $('#itemsWrapperLinks').length > 0 ){
+					if( $('.itemsWrapperLinks').length > 0 ){
 						
 						const itemsCaptions = document.getElementById("itemsWrapperLinks");
 						const thumbsLink = [...itemsCaptions.querySelectorAll(".trigger-item-link")];
@@ -1526,7 +1526,7 @@ Function FitThumbScreen WEBGL
 				}			
 				
 				
-				$('#itemsWrapperLinks .trigger-item-link, #itemsWrapperLinks .trigger-item-link-secondary').on('click', function() {					
+				$('.itemsWrapperLinks .trigger-item-link, .itemsWrapperLinks .trigger-item-link-secondary').on('click', function() {					
 					
 					let parent_item = $(this).closest( '.trigger-item' );
 					parent_item.addClass('above');
@@ -1659,7 +1659,7 @@ Function FitThumbScreen GSAP
 	
 		if (!$("body").hasClass("disable-ajaxload")) {
 		
-			if ($("#itemsWrapper").hasClass("scale-fitthumbs")) {		
+			if ($(".itemsWrapper").hasClass("scale-fitthumbs")) {		
 				
 				$("body").find(".thumb-wrapper").each(function() {
 					$("#clone-image").append($(this))
@@ -1828,9 +1828,9 @@ Function FitThumbScreen GSAP
 					};
 				}
 				
-			} else if ($("#itemsWrapper").hasClass("no-fitthumbs")) {
+			} else if ($(".itemsWrapper").hasClass("no-fitthumbs")) {
 				
-				$('#itemsWrapperLinks .trigger-item-link').on('click', function() {
+				$('.itemsWrapperLinks .trigger-item-link').on('click', function() {
 					let parent_item = $(this).closest( '.trigger-item' );
 					parent_item.addClass('above-trigger');
 					$("body").addClass("show-loader").addClass("load-project-thumb");
@@ -1865,7 +1865,7 @@ Function FitThumbScreen GSAP
 			
 		} else {
 				
-			$('#itemsWrapperLinks .trigger-item').on('click', function() {
+			$('.itemsWrapperLinks .trigger-item').on('click', function() {
 				
 				$("body").addClass("show-loader").addClass("load-project-thumb");
 				
@@ -2390,7 +2390,7 @@ Function Justified Grid
 		if( $('.justified-grid').length > 0 ){
 		
 			$('.justified-grid').justifiedGallery({
-				rowHeight : 360,
+				rowHeight : 200,
 				lastRow : 'nojustify',
 				margins : 10
 			});
