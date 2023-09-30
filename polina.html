@@ -75,7 +75,7 @@
                                             <li class="link menu-timeline">
                                                 <a class="ajax-link" data-type="page-transition" href="/cg.html">
                                                     <div class="before-span">
-                                                        <span data-hover="Visual Effects">Visual Effects</span>
+                                                        <span data-hover="Art">Art</span>
                                                     </div>
                                                 </a>
                                             </li>
@@ -107,7 +107,7 @@
                     <!-- Main -->
                     <div id="main">
                         <!-- Hero Section -->
-                        <div id="hero">
+                        <div id="hero" class="has-image">
                             <div id="hero-styles">
                                 <div id="hero-caption" class="content-full-width parallax-scroll-caption">
                                     <div class="inner">
@@ -116,25 +116,38 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>                            
+                        </div> 
+                        <div id="hero-image-wrapper">
+                            <div id="hero-background-layer" class="parallax-scroll-image">
+                                <div id="hero-bg-image" style="background-image:url(images/projects/polina.webp)"></div>
                             </div>
                         </div>
                         <!--/Hero Section -->
                         <!-- Main Content -->
-                        <div id="main-content">
+                        <div id="main-content" data-project="polina">
                             <div id="main-page-content">
                                 <!-- Row -->
-                                <div class="content-row row_padding_left row_padding_right row_padding_bottom full light-section gal-auto" data-bgcolor="#eee">
+                                <div class="content-row row_padding_left row_padding_right row_padding_bottom dark-content full light-section gal-auto" data-bgcolor="#eee">
+                                    <hr>
                                     <p><img src="svg/instagram.svg" alt=""> <a class="link" href="https://www.instagram.com/alterego.po/" target="_blank">Polina</a></p>
-
+                                    <h2>Refraction</h2>
+                                    <div class="justified-grid auto" data-prefix="refraction" data-count="9"></div>
+                                    <hr>
+                                    <h2>Refraction</h2>
+                                    <div class="justified-grid auto" data-prefix="interview" data-count="6"></div>
+                                </div>
+                                <div class="content-row row_padding_left row_padding_right row_padding_bottom light-content full dark-section gal-auto" data-bgcolor="#111">
+                                    <hr>
+                                    <hr>
                                     <h2>Red</h2>
-                                    <div class="justified-grid auto" data-prefix="red" data-count="2"></div>
+                                    <div class="justified-grid auto" data-prefix="red" data-primary-color="#ee2110" data-count="2"></div>
                                     <hr>
                                     <h2>White</h2>
                                     <div class="justified-grid auto" data-prefix="white" data-count="3"></div>
                                     <hr>
-                                    <h2>Refraction</h2>
-                                    <div class="justified-grid auto" data-prefix="refraction" data-count="9"></div>
-                                    <hr>
+                                </div>
+                                <div class="content-row row_padding_left row_padding_right row_padding_bottom full light-section gal-auto" data-bgcolor="#eee">
                                     <h2>Backlit</h2>
                                     <div class="justified-grid auto" data-prefix="backlit" data-count="8"></div>
                                     <hr>
@@ -240,26 +253,6 @@
     <script src="js/common.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $('.auto').each(function (i, element) {
-
-                var count = $(this).data("count") + 1;
-                var prefix = $(this).data("prefix");
-
-                for (let index = 1; index < count; index++) {
-                    var indexString = index.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
-                    $(element).append('<div class="collage-thumb"><a class="image-link" href="images/projects/polina/polina_' + prefix + '_' + indexString + '.webp"><img src="images/projects/polina/polina_' + prefix + '_' + indexString + '.webp" alt="img" /></a></div>');
-                }
-            });
-
-
-
-
-
-        });
-    </script>
 </body>
 
 </html>
