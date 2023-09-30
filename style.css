@@ -4176,3 +4176,13 @@ em {
 	}
 
 }
+
+.gal-auto h2 {
+	margin-top: 128px;
+	margin-bottom: 18px;
+}
+
+
+#magic-cursor {
+	mix-blend-mode: difference;
+}
