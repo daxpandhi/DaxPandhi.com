@@ -2390,9 +2390,9 @@ jQuery(function ($) {
 			if( $('.justified-grid').length > 0 ){
 			
 				$('.justified-grid').justifiedGallery({
-					rowHeight : 360,
+					rowHeight : 560,
 					lastRow : 'nojustify',
-					margins : 10
+					margins : 5
 				});
 			
 			}
